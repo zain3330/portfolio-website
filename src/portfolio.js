@@ -20,26 +20,26 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Zain Mushtaq",
+  title: "Hi all, I'm Zain",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A motivated Full Stack Software Developer 🚀 with over a year of experience in Backend Development, specializing in PHP, Laravel, CodeIgniter, HTML, CSS, Bootstrap, jQuery, JSON, MySQL, API development, and Power Apps."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "/resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/zain3330",
+  linkedin: "https://www.linkedin.com/in/zainmushtaq/",
+  gmail: "zainmushtaq055@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +49,28 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "PASSIONATE BACKEND DEVELOPER WITH A DRIVE TO MASTER EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop and maintain robust Backend architectures using PHP, Laravel, and CodeIgniter"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Build responsive and dynamic Front end / User Interfaces with HTML5, CSS3, Bootstrap, Tailwind, and React.js"
+    ),
+    emoji(
+      "⚡ Expertise in Database management and optimization using MySQL"
+    ),
+    emoji(
+      "⚡ Integration of APIs and third-party services, ensuring seamless interactions and data flow"
+    ),
+    emoji(
+      "⚡ Develop enterprise-level systems such as ERP and HMIS, tailored to client needs"
+    ),
+    emoji(
+      "⚡ Utilize Power Apps for Mobile App Development and automation of business processes"
+    ),
+    emoji(
+      "⚡ Proficient in Web Scraping to gather and analyze data from various sources"
     )
   ],
 
@@ -65,7 +79,7 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
+      skillName: "html5",
       fontAwesomeClassname: "fab fa-html5"
     },
     {
@@ -73,8 +87,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "bootstrap",
+      fontAwesomeClassname: "fab fa-bootstrap"
+    },
+    {
+      skillName: "tailwind",
+      fontAwesomeClassname: "fas fa-wind"
     },
     {
       skillName: "JavaScript",
@@ -85,37 +103,33 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "jquery",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "php",
+      fontAwesomeClassname: "fab fa-php"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "laravel",
+      fontAwesomeClassname: "fab fa-laravel"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
+      skillName: "codeigniter",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "mysql",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "web scraping",
+      fontAwesomeClassname: "fas fa-search"
+    },
+    {
+      skillName: "power apps",
+      fontAwesomeClassname: "fas fa-mobile-alt"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,46 +140,59 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Lahore",
+      // logo: require("./assets/images/uol.webp"), // Replace with the correct path to your university's logo
+      subHeader: "Bachelor of Science in Computer Science (BSCS)",
+      duration: "September 2018 - July 2022", // Adjusted to reflect the typical duration of a bachelor's degree
+      desc: "Focused on web development, database management, and mobile app technologies.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      "Completed a final year project titled 'PLAYit,' a mobile application developed using React Native that allows users to play audio and videos. The app includes unique features such as Video Locker, Video Downloader, and support for HD and 4K video formats.",
       ]
     },
+
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Forman Christian College (A Chartered University)",
+      // logo: "https://www.fccollege.edu.pk/wp-content/uploads/2020/06/FCC-Logo-White.png", // Replace with the correct logo URL if available
+      subHeader: "F.Sc. Pre-Engineering (Intermediate)",
+      duration: "2015 - 2017",
+      desc: "Completed Intermediate studies with a focus on Pre-Engineering subjects, laying the foundation for a career in computer science and engineering.",
+      descBullets: [
+        "Gained strong foundational knowledge in mathematics, physics, and chemistry",
+        "Developed problem-solving skills essential for engineering and technology disciplines",
+        "Participated in various academic and extracurricular activities, enhancing both technical and soft skills"
+      ]
     }
+
   ]
 };
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true, // Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Backend Development", // Reflects your experience in backend technologies
+      progressPercentage: "80%" // Adjusted based on your experience and expertise
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Frontend Development", // Reflects your experience in frontend technologies
+      progressPercentage: "70%" // Adjusted based on your experience and expertise
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Database Management", // Represents your skills in database technologies
+      progressPercentage: "75%" // Adjusted based on your experience and expertise
+    },
+    {
+      Stack: "Web Scraping", // Reflects your experience in web scraping
+      progressPercentage: "65%" // Adjusted based on your experience and expertise
+    },
+    {
+      Stack: "Mobile App Development", // Reflects your experience with Power Apps
+      progressPercentage: "60%" // Adjusted based on your experience and expertise
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false // Set true to display CodersRank badges section
 };
 
 // Work experience section
@@ -175,30 +202,41 @@ const workExperiences = {
   experience: [
     {
       role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      company: "Fatima Memorial Hospital",
+      companylogo: require("./assets/images/fmh3.png"),       date: "March 2024 – Present",
+      // desc: "Designed and implemented a Power App to verify employee discounts on Outpatient (OPT) and Inpatient (IPT) services, enhancing efficiency and accuracy in discount management. Provide ongoing support and maintenance for ERP and Hospital Management Information System (HMIS) solutions, ensuring seamless integration and optimal performance. Additionally, working on a job portal project, focusing on development and integration of job listing features.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed a Power App for managing and verifying employee discounts on healthcare services",
+        "Provided support for ERP and HMIS solutions, ensuring seamless integration and performance",
+        "Collaborated with cross-functional teams to enhance system features and resolve issues",
+        "Currently developing and integrating features for a job portal project"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Backend Developer",
+      company: "Freelancer",
+      companylogo: require("./assets/images/freelacer.webp"),       date: "March 2023 – February 2024",
+      // desc: "Developed a comprehensive Fuel Management System for Almeraj Groups using PHP CodeIgniter. Designed and implemented the system's architecture, ensuring scalability and performance. Built and maintained Laravel APIs for a Coach Analysis Platform to manage teams, players, coaches, and videos.",
+      descBullets: [
+        "Developed a Fuel Management System with PHP CodeIgniter, focusing on scalability and performance",
+        "Designed and implemented system architecture for efficient fuel management",
+        "Built and maintained Laravel APIs for managing teams, players, coaches, and videos"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Frontend Developer",
+      company: "Snexus",
+      companylogo: require("./assets/images/snexus.jpeg"), // Replace with the correct logo URL if available
+      date: "November 2022 – February 2023",
+      // desc: "Worked as a UI Developer responsible for converting PSD designs to HTML, HTML5/CSS3/JS, and React JS Framework. Focused on creating responsive, user-friendly front-end interfaces.",
+      descBullets: [
+        "Converted PSD designs to HTML, HTML5, CSS3, and JavaScript",
+        "Developed user interfaces using React JS Framework",
+        "Ensured responsiveness and cross-browser compatibility"
+      ]
     }
   ]
+
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -216,28 +254,29 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/pro1.png"),
+      projectName: "Coaches Sports Analysis",
+      projectDesc: "A platform designed to assist coaches in analyzing sports performances, enabling them to manage teams, track player progress, and review game footage. The project includes features for uploading and categorizing videos, and comprehensive data analytics.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://stage.coachessportsanalysis.com/login"
         }
-        //  you can add extra buttons here.
+        // You can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/pro2.png"),
+      projectName: "Fuel Management System - Almeraj Groups",
+      projectDesc: "Developed for Almeraj Groups, this system manages fuel consumption, tracks usage, and generates reports for better resource management. The project focuses on enhancing operational efficiency and scalability.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://www.almerajgroups.com/dashboard"
         }
       ]
     }
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -300,7 +339,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +363,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +382,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +395,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -372,15 +411,15 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+923095911378",
+  email_address: "zainmushtaq055@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
