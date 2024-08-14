@@ -96,7 +96,11 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column; /* Stacks the buttons vertically on mobile */
+    align-items: center; /* Centers the buttons horizontally */
+    justify-content: center; /* Centers the buttons vertically */
+    gap: 10px; /* Adds space between the buttons */
   }
   .greeting-text {
     font-size: 30px;
